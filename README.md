@@ -21,7 +21,7 @@ WebDesigning/
 ├── Ex.2(Login page)2/
 │   ├── index.html
 │   ├── LOGIN.html
-│   ├── RGISTRATION.html
+│   ├── REGISTRATION.html
 │   ├── CATALOUGUE.html
 │   ├── CART.html
 │   ├── CSE.html
