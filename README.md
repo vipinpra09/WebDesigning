@@ -78,96 +78,101 @@ Contains a simple cart table showing:
 
 ---
 
-# How to Use This Repository
+# How to Use the Code in VS Code
 
-This section is mainly for classmates who want to use the practical code in **VS Code**.
+This section is for classmates who want to use these practical codes in **Visual Studio Code (VS Code)**.
 
-## 1. Install VS Code
+## 1. Create a Folder
 
-Download and install **Visual Studio Code (VS Code)** if it is not already installed.
-
-## 2. Download or Clone the Repository
-
-You can either download the repository as a ZIP file from GitHub or clone it using Git.
-
-### Option A — Download ZIP
-
-1. Open the repository on GitHub.
-2. Click **Code**.
-3. Select **Download ZIP**.
-4. Extract the ZIP file.
-5. Open the extracted `WebDesigning` folder in VS Code.
-
-### Option B — Clone using Git
-
-Open the VS Code terminal and run:
-
-```bash
-git clone https://github.com/vipinpra09/WebDesigning.git
-```
-
-Then open the `WebDesigning` folder in VS Code.
-
----
-
-# How to Add the Code for an Experiment
-
-**Important:** You do not need to create a new project for every small practical if the required files already exist.
-
-## For the First Experiment
-
-If you are starting from the beginning:
-
-1. Create a folder on your computer, for example:
+Create one main folder anywhere on your computer. For example:
 
 ```text
 WebDesigning
 ```
 
-2. Open this folder in VS Code.
-3. Create the required HTML files inside the folder.
-4. Copy the code for the experiment into the corresponding files.
-5. Save the files.
-6. Open `index.html` in a browser to test the webpage.
+Open this folder in VS Code.
 
-For example:
+## 2. Create a Folder for the Experiment
+
+For the first experiment, create a separate folder inside your main folder:
 
 ```text
 WebDesigning/
 └── Ex.1(Home page)/
-    ├── index.html
-    ├── LOGIN.html
-    ├── REGISTRATION.html
-    ├── CATALOUGUE.html
-    └── CART.html
 ```
 
-## For the Next Experiments
+Create the HTML files required for that experiment inside it.
 
-Before creating new files, **check whether the files from the previous experiment already exist**.
-
-If a required file already exists, you can simply:
-
-- Copy the previous file into the new experiment folder, **or**
-- Change/replace the code inside the existing file according to the new experiment.
-
-### Example
-
-Suppose you completed the Login Page and already have:
+For example:
 
 ```text
-LOGIN.html
+Ex.1(Home page)/
+├── index.html
+├── LOGIN.html
+├── REGISTRATION.html
+├── CATALOUGUE.html
+└── CART.html
 ```
 
-For the next experiment, if the task requires changes to the login page, you do **not** need to create another random file.
+## 3. Copy the Code
 
-Open the existing `LOGIN.html` and replace/update its code according to the new experiment.
+Open the required file in VS Code and copy the corresponding code from this repository into that file.
 
-Similarly, if the next experiment requires `CATALOUGUE.html` and that file already exists, either copy that file into the new experiment folder or modify its code as required.
+For example:
+
+```text
+LOGIN.html  →  Copy the Login Page code into LOGIN.html
+CATALOUGUE.html  →  Copy the Catalogue code into CATALOUGUE.html
+CART.html  →  Copy the Cart code into CART.html
+```
+
+Save the file using **Ctrl + S**.
+
+## 4. Check the File Names
+
+Keep the file names exactly as they are used in the HTML links.
+
+For example:
+
+```html
+<a href="LOGIN.html">LOGIN</a>
+```
+
+Here, `LOGIN.html` must exist in the correct location.
+
+---
+
+# How to Handle the Next Experiment
+
+Before creating a new file for the next experiment, **check whether the required file already exists from the previous experiment**.
+
+There are two simple options:
+
+### Option 1 — Copy the Previous File
+
+If the previous file is needed for the next experiment, copy it into the new experiment folder and then modify the copied code.
+
+Example:
+
+```text
+Ex.1(Home page)/
+└── LOGIN.html
+
+Ex.2(Login page)/
+└── LOGIN.html
+```
+
+This keeps the previous experiment unchanged.
+
+### Option 2 — Change the Existing Code
+
+If you are continuing with the same project and do not need to keep a separate copy, open the existing file and **change or replace its code according to the new experiment**.
+
+For example, if the next experiment is related to `LOGIN.html`, open the existing `LOGIN.html` and update its code instead of unnecessarily creating another login file.
 
 ### Recommended Method
 
-Keep each experiment in its own folder so that your previous work remains safe:
+For practical submissions, it is better to keep each experiment in its own folder:
 
 ```text
 WebDesigning/
@@ -180,28 +185,20 @@ WebDesigning/
 └── Ex.6(...)/
 ```
 
-This makes it easier to submit individual experiments and prevents newer code from accidentally overwriting your previous practical work.
+This keeps every experiment separate and prevents new changes from overwriting your previous practical work.
 
 ---
 
 # How to Run the HTML Code
 
-After copying or writing the code:
+After copying the code into VS Code:
 
 1. Save the file using **Ctrl + S**.
 2. Open the `.html` file in your browser.
-3. For a multi-page experiment, make sure all linked HTML files are inside the correct folder.
-4. Check that the file names used in `href` match the actual file names.
+3. If the experiment contains multiple HTML files, keep all related files in the correct folder.
+4. Test all navigation links.
 
-For example:
-
-```html
-<a href="LOGIN.html">LOGIN</a>
-```
-
-means that `LOGIN.html` should be in the same folder as the current HTML file unless another path is specified.
-
-## Using Live Server (Optional)
+### Using Live Server (Optional)
 
 If you have the **Live Server** extension installed in VS Code:
 
@@ -210,19 +207,20 @@ If you have the **Live Server** extension installed in VS Code:
 3. Select **Open with Live Server**.
 4. The webpage will open in your browser.
 
-Live Server is optional. Basic HTML files in this repository can also be opened directly in a browser.
+Live Server is optional. These basic HTML files can also be opened directly in a browser.
 
 ---
 
 # Important Tips for Classmates
 
-- Keep the **file names exactly the same** as used in the HTML `href` links.
-- Do not delete previous experiment files if you may need them for submission.
-- Before starting a new experiment, check whether the required HTML file already exists.
-- If it exists, **copy it for the new experiment or modify its code** according to the new question.
+- Create a separate folder for each experiment.
+- Copy the code into the **specific HTML file related to that experiment**.
+- Before creating a new file, check whether the required file already exists.
+- If the file exists, either **copy it into the new experiment folder** or **modify its code** according to the new experiment.
+- Do not delete previous experiment files if you need them for submission.
+- Keep file names exactly the same as those used in `href` links.
 - Save your work regularly.
-- Test every link after changing file names or folder locations.
-- Keep each experiment in a separate folder for easy organization and submission.
+- Test every link after changing files or folders.
 
 ---
 
