@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Registration Page</title> 
+</head> 
+<body> 
+    <form> 
+        <table bgcolor="pink"> 
+            <tr> 
+                <td colspan="2">
+                    <h1><center><u>Registration Form</u></center></h1>
+                </td> 
+            </tr> 
+            <tr> 
+                <td>Name:</td> 
+                <td><input type="text" name="name"></td> 
+            </tr> 
+            <tr> 
+                <td>Password:</td> 
+                <td><input type="password" name="password"></td> 
+            </tr> 
+            <tr> 
+                <td>Email ID:</td> 
+                <td><input type="text" name="email"></td> 
+            </tr> 
+            <tr> 
+                <td>Phone Number:</td> 
+                <td><input type="text" name="phone"></td>
+            </tr> 
+            <tr> 
+                <td>Sex:</td> 
+                <td> 
+                    <input type="radio" name="sex" value="male"> Male 
+                    <input type="radio" name="sex" value="female"> Female 
+                </td> 
+            </tr> 
+            <tr> 
+                <td>Date of Birth:</td> 
+                <td> 
+                    <select name="day"> 
+                        <option>Day</option> 
+                        <option>1</option> 
+                        <option>2</option> 
+                        <option>3</option> 
+                        <!-- add more days--> 
+                    </select> 
+                    <select name="month"> 
+                        <option>Month</option> 
+                        <option>Jan</option> 
+                        <option>Feb</option> 
+                        <option>Mar</option> 
+                        <!-- add more months--> 
+                    </select> 
+                    <select name="year"> 
+                        <option>Year</option> 
+                        <option>1990</option> 
+                        <option>1991</option> 
+                        <option>1992</option> 
+                        <!-- add more years--> 
+                    </select> 
+                </td> 
+            </tr> 
+            <tr> 
+                <td>Languages Known:</td> 
+                <td> 
+                    <input type="checkbox" name="lang" value="english"> English 
+                    <input type="checkbox" name="lang" value="telugu"> Telugu 
+                    <input type="checkbox" name="lang" value="hindi"> Hindi 
+                    <input type="checkbox" name="lang" value="tamil"> Tamil 
+                </td> 
+            </tr> 
+            <tr> 
+                <td>Address:</td> 
+                <td><textarea name="address" rows="4" cols="30"></textarea></td> 
+            </tr> 
+            <tr> 
+                <td></td> 
+                <td>
+                    <input type="submit" value="Register"> 
+                    <input type="reset" value="Clear"> 
+                </td> 
+            </tr> 
+        </table> 
+    </form> 
+</body> 
+</html>
